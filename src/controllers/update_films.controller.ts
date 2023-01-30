@@ -11,7 +11,7 @@ export async function update_films(req: Request, res: Response) {
 
     const resultFind = await findFilmID(body);
 
-    if (resultFind.rowCount < 1) {
+    if (!resultFind.name) {
         res.status(409).send("Filme inexistente!");
     }
 

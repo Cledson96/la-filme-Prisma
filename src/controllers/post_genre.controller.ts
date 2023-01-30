@@ -16,7 +16,7 @@ export async function genre(req: Request, res: Response) {
 
     const resultFind = await findGenre(body);
 
-    if (resultFind.rowCount > 0) {
+    if (resultFind.name) {
         res.status(409).send("Genero já cadastrado!");
     }
 

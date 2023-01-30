@@ -7,7 +7,7 @@ import post_genre from "./routes/post_genre.route.js"
 import post_platform from "./routes/post_platform.route.js"
 import update_films from "./routes/update_films.route.js"
 import delete_films from "./routes/delete_films.route.js"
-import get_films_genre from "./routes/get_films_genre.route.js"
+
 
 
 //config
@@ -20,7 +20,6 @@ app.use(cors());
 app.use(post_genre)
 app.use(post_platform)
 app.use(get_films)
-app.use(get_films_genre)
 app.use(post_films)
 app.use(update_films)
 app.use(delete_films)
